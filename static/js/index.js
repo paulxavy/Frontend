@@ -1,7 +1,7 @@
 let endPoint = 'https://flask-backenduce.herokuapp.com/upload';
 // Get textarea - Dom
 function getVal() {
-    console.log("si va")
+    //console.log("si va")
     const val = document.querySelector('input').value;
     let data = {data: val};
     fetch(endPoint, {

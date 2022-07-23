@@ -23,7 +23,7 @@ def upload_file():
   json_data = request.json
   a_value = json_data["data"] #la palabra correcta desde de correr el algoritmo
   resp = requests.post('https://flask-backenduce.herokuapp.com/', json=json_data)
-  print(resp.json())
+  #print(resp.json())
   return jsonify(value=resp.json()["value"])
 #jsonify(value=resp)
 if __name__ == "__main__":
