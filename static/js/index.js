@@ -13,7 +13,7 @@ function getVal() {
     }).then(res =>  res.json())
     .then(response => {
         //console.log('Success:', response)
-        console.log(response.value);
+        //console.log(response.value);
         let result = document.getElementById("result");
         result.value = response.value;
     })
